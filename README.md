@@ -9,9 +9,13 @@ Generic Signature Format for SIEM Systems
 # QUICK INSTALL
 
 git clone https://github.com/SigmaHQ/sigma.git
+
 cd sigma
+
 pip3 install sigmatools
+
 sigmac -t splunk -c sysmon rules/linux/file_create/file_create_lnx_persistence_cron_files.yml
+
 
 # What is Sigma
 
