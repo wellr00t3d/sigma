@@ -6,6 +6,13 @@
 
 Generic Signature Format for SIEM Systems
 
+# QUICK INSTALL
+
+git clone https://github.com/SigmaHQ/sigma.git
+cd sigma
+pip3 install sigmatools
+sigmac -t splunk -c sysmon rules/linux/file_create/file_create_lnx_persistence_cron_files.yml
+
 # What is Sigma
 
 Sigma is a generic and open signature format that allows you to describe relevant log events in a straightforward manner. The rule format is very flexible, easy to write and applicable to any type of log file. The main purpose of this project is to provide a structured form in which researchers or analysts can describe their once developed detection methods and make them shareable with others.
